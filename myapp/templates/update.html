@@ -1,0 +1,16 @@
+{% extends 'a.html' %} 
+{% block content %}
+
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {{ apples.as_p }}
+
+    <button class="btn btn-primary" value="update">Submit</button>
+
+</form>
+
+    
+{% endblock %}
